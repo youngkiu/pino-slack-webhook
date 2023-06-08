@@ -1,3 +1,5 @@
+[![ESLint](https://github.com/youngkiu/pino-slack-webhook/actions/workflows/eslint.yml/badge.svg)](https://github.com/youngkiu/pino-slack-webhook/actions/workflows/eslint.yml)
+[![Node.js CI](https://github.com/youngkiu/pino-slack-webhook/actions/workflows/node.js.yml/badge.svg)](https://github.com/youngkiu/pino-slack-webhook/actions/workflows/node.js.yml)
 
 # @youngkiu/pino-slack-webhook
 

@@ -1,6 +1,6 @@
 {
   "name": "@youngkiu/pino-slack-webhook",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "pino-slack-webhook is a Pino v7+ compatible transport to forward log events to Slack from a dedicated worker",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
