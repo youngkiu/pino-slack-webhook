@@ -10,6 +10,7 @@ const transport = pino.transport({
                 channel: '#error-noti',
                 username: 'testuser',
                 iconEmoji: 'testemoji',
+                verbose: true,
             },
         },
         {

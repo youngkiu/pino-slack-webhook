@@ -41,12 +41,14 @@ export default async function (opts: {
   channel: string;
   username?: string;
   emoji?: string;
+  verbose?: boolean;
 }) {
     const {
         webhookUrl,
         channel,
         username = 'webhookbot',
         emoji = ':ghost:',
+        verbose = false,
     } = opts;
 
     if (!webhookUrl || !channel) {
@@ -54,13 +56,18 @@ export default async function (opts: {
     }
 
     return build(async (source) => {
-        for await (const { msg } of source) {
+        for await (const obj of source) {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const { time, level, msg, err, error, stack, ...props } = obj;
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const { message: errMessage, stack: errStack, ...errorProps} = err || error || {};
+
             await sendNotiToSlack({
                 url: webhookUrl,
                 channel,
                 username,
                 emoji,
-                text: msg,
+                text: verbose ? JSON.stringify(obj) : msg,
             });
         }
     });
