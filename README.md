@@ -34,7 +34,7 @@ const logger = pino({
 
 logger.info('test log!');
 ```
-[test-app.ts](test/test-app.ts)
+[app.ts](example/app.ts)
 
 <img alt="slack-webhook.png" src="image/slack-webhook.png" width="200"/>
 
