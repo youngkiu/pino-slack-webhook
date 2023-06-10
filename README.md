@@ -1,6 +1,5 @@
 [![ESLint](https://github.com/youngkiu/pino-slack-webhook/actions/workflows/eslint.yml/badge.svg)](https://github.com/youngkiu/pino-slack-webhook/actions/workflows/eslint.yml)
 [![Node.js CI](https://github.com/youngkiu/pino-slack-webhook/actions/workflows/node.js.yml/badge.svg)](https://github.com/youngkiu/pino-slack-webhook/actions/workflows/node.js.yml)
-[![Node.js Package](https://github.com/youngkiu/pino-slack-webhook/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/youngkiu/pino-slack-webhook/actions/workflows/npm-publish.yml)
 
 [//]: # ([![npm version]&#40;https://badge.fury.io/js/@youngkiu/pino-slack-webhook&#41;]&#40;https://badge.fury.io/js/@youngkiu/pino-slack-webhook&#41;)
 [![NPM downloads](http://img.shields.io/npm/dm/@youngkiu/pino-slack-webhook.svg?style=flat-square)](http://www.npmtrends.com/@youngkiu/pino-slack-webhook)
