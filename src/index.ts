@@ -49,17 +49,12 @@ export default async function (opts: {
         emoji = ':ghost:',
     } = opts;
 
-    if (!opts.webhookUrl || !opts.channel) {
+    if (!webhookUrl || !channel) {
         throw new Error('The required options(webhookUrl, channel) are missing');
     }
 
     return build(async (source) => {
-        for await (const obj of source) {
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            const { time, level, msg, err, error, stack, ...props } = obj;
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            const { message: errMessage, stack: errStack, ...errorProps} = err || error || {};
-
+        for await (const { msg } of source) {
             await sendNotiToSlack({
                 url: webhookUrl,
                 channel,
